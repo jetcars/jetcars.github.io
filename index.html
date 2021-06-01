@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <title>Jett Cars</title>
+</head>
+<body onload="slider()">
+  <!-----------======================================HEADER=============================------------------------>
+  <header>
+    <h1 class="logo"><a style="text-decoration: none; color: black;" href ="index.html">Jett<span style="color:#f4bc33;">Cars</span></a></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#test">Testimonials</a></li>
+        <li><a href="#bottom">Contact</a></li>
+      </ul> 
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+  <!-----------======================================Background slider=============================------------------------>
+  <div class="banner">
+    <div class="slider">
+      <img src="car2.jpg" id="slideImg">
+    </div>
+    <div class="overlay">
+  
+     <div class="content">
+       <h1>Jett<span style="color: 
+      #f4bc33;">Cars</span></h1>
+       <h3>Life is a journey so choose your car wisely.</h3>
+
+       <div>
+        <a href = "#second"> <button type="button">Buy a Car</button></a>
+         <button class="open-button" onclick="openForm()" type="button"> Sell a Car</button>
+       </div>
+     </div>
+   </div>
+  </div>
+  <div class="form-popup" id="myForm">
+    <form action="https://formspree.io/f/xyylwklk" class="form-container" method="POST">
+      <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Sell a <span style="color: #f4bc33;">Car</span></h1>
+  
+      <label for="email"><b>Full Name</b></label>
+      <input type="text" placeholder="Enter Full Name" name="name" required>
+  
+      <label for="email"><b>Contact Number</b></label>
+      <input type="text" placeholder="Ex: 0912345679" name="number" required>
+
+      <label for="email"><b>Car Model</b></label>
+      <input type="text" placeholder="Ex: Toyota Vios 2019" name="model" required>
+
+      <label for="email"><b>Price</b></label>
+      <input type="text" placeholder="Car Price" name="price" required>
+  
+  
+  
+      <button type="submit" class="btn">Submit</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+  
+
+     <div id="second"></div>
+     <div class="form-popup" id="myForm"></div>
+     <div class="form-popup" id="myForm"></div>
+      <h2 id="carSect">Available <span style="color: #f4bc33;">Cars</span></h2>
+      <div class="row">
+      <div class ="col">
+      <div class="card">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg?crop=1xw:0.9997727789138833xh;center,top&resize=480:*">
+        <h1>2019 Honda Civic</h1>
+        <p class="price">P900,000.00</p>
+        <p>Visit our <a href="https://www.facebook.com/parknsell15"> Facebook page</a> for specifications.
+          
+        </p>
+        <p><button class="buy">BUY NOW</button></p>
+      </div>
+      </div>
+      <div class ="col">
+      <div class="card">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg?crop=1xw:0.9997727789138833xh;center,top&resize=480:*">
+        <h1>2019 Honda Civic</h1>
+        <p class="price">P900,000.00</p>
+        <p>Visit our <a href="https://www.facebook.com/parknsell15"> Facebook page</a> for specifications.</p>
+        <p><button>BUY NOW</button></p>
+      </div>
+      </div>
+      
+      <div class ="col">
+      <div class="card">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2019-honda-civic-sedan-1558453497.jpg?crop=1xw:0.9997727789138833xh;center,top&resize=480:*">
+        <h1>2019 Honda Civic</h1>
+        <p class="price">P900,000.00</p>
+        <p>Visit our <a href="https://www.facebook.com/parknsell15"> Facebook page</a> for specifications.</p>
+        <p><button>BUY NOW</button></p>
+      </div>
+      </div>
+      
+      <div class ="col">
+      <div class="card">
+        <img src="https://etimg.etb2bimg.com/photo/75058888.cms">
+        <h1>2019 Honda Civic</h1>
+        <p class="price">P900,000.00</p>
+        <p>Visit our <a href="https://www.facebook.com/parknsell15"> Facebook page</a> for specifications.</p>
+        <p><button>BUY NOW</button></p>
+      </div>
+      </div>
+      <div class ="col">
+      <div class="card">
+        <img src="https://etimg.etb2bimg.com/photo/75058888.cms">
+        <h1>2019 Honda Civic</h1>
+        <p class="price">P900,000.00</p>
+        <p>Visit our <a href="https://www.facebook.com/parknsell15"> Facebook page</a> for specifications.</p>
+        <p><button>BUY NOW</button></p>
+      </div>
+      </div>
+      <div class ="col">
+      <div class="card">
+        <img src="https://etimg.etb2bimg.com/photo/75058888.cms">
+        <h1>2019 Honda Civic</h1>
+        <p class="price">P900,000.00</p>
+        <p>Visit our <a href="https://www.facebook.com/parknsell15"> Facebook page</a> for specifications.</p>
+        <p><s><button> SOLD</s></button></p>
+      </div>
+      </div>
+      </div>
+      <div class="testimonials">
+        <div class="inner">
+          <h1 id="test">WHAT OUR CLIENT SAYS</h1>
+          <div class="border"></div>
+  
+          <div class="row">
+            <div class="col">
+              <div class="testimonial">
+                <img src="p1.png" alt="">
+                <div class="name">Full name</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+  
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="testimonial">
+                <img src="p2.png" alt="">
+                <div class="name">Full name</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+  
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="testimonial">
+                <img src="p3.png" alt="">
+                <div class="name">Full name</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+  
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <!--==========================================Footer==========================================================-->
+  
+
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.3655690234305!2d121.06186841527888!3d14.578233281531704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c81333b6cb75%3A0x2e7bdb8189d44de4!2sPark%20N&#39;%20Sell!5e0!3m2!1sen!2sph!4v1622475461258!5m2!1sen!2sph"></iframe>
+				<h3 id="bottom" >Jett<span>Cars</span></h3>
+
+			
+
+				<p class="footer-company-name">©  Copyright 2021, JettCars All rights reserved | Created by Zyre M.</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p>Park N' Sell-F 
+              <span>Department of Education Capt. Henry P. Javier</span>Pasig, Metro Manila</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+63 9498091320</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="https://mail.google.com/mail/u/6/#inbox" target="_blank">jettcars@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					We offer and accept second-hand cars.</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+  
+  <script src="main.js">
+ </script>
+ 
+</body>
+</html>
